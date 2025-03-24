@@ -1,0 +1,158 @@
+.home {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    max-width: 1200px;
+    padding: 100px 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 130px;
+  }
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    position: relative;
+    z-index: 2;
+
+    &--header {
+      opacity: 0;
+      font-size: 76px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      animation: fadeIn 1s ease 0.2s forwards;
+    }
+
+    &--small_p {
+      opacity: 0;
+      font-size: 18px;
+      font-weight: 400;
+      color: #676767;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      animation: fadeIn 1.5s ease 0.4s forwards;
+
+      &--bold {
+        font-weight: 700;
+        color: #000;
+      }
+    }
+
+    &--additional {
+      opacity: 0;
+      padding-top: 32px;
+      display: flex;
+      flex-direction: row;
+      gap: 66px;
+      align-items: center;
+      animation: fadeIn 1.5s ease 0.8s forwards;
+    }
+  }
+
+  &__hero__images {
+    position: relative;
+    width: 50%;
+    height: 600px;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  &__buttons {
+    opacity: 0;
+    display: flex;
+    gap: 16px;
+    padding-top: 10px;
+    animation: fadeIn 1.5s ease 0.6s forwards;
+  }
+  @media (min-width: 1441px) {
+    &__container {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__container {
+      padding: 80px 60px;
+    }
+
+    &__hero__images {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      padding: 60px 40px;
+    }
+
+    &__hero {
+      width: 100%;
+    }
+
+    &__hero__images {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__container {
+      padding: 40px 20px;
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+
+    &__hero {
+      width: 100%;
+      align-items: center;
+
+      &--header {
+        font-size: 48px;
+      }
+
+      &--small_p {
+        font-size: 16px;
+      }
+
+      &--additional {
+        display: none;
+      }
+    }
+
+    &__hero__images {
+      width: 100%;
+      height: 300px;
+      margin-top: 40px;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,154 @@
+.footer {
+  background-color: #141416;
+  border-top: 1px solid #e5e5e5;
+  padding: 48px 97px;
+  margin-top: 48px;
+  width: 100%;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  &__logo {
+    display: flex;
+    color: #ffffff;
+    gap: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    align-items: center;
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 20px;
+    }
+  }
+  &__info {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    flex-wrap: wrap;
+  }
+  &__socials {
+    padding: 60px 30px 30px 30px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    &--header {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 60px;
+    margin-top: 40px;
+
+    &__container {
+      gap: 20px;
+    }
+
+    &__logo {
+      font-size: 26px;
+
+      &-icon {
+        padding-right: 16px;
+      }
+    }
+
+    &__info {
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    &__socials {
+      padding: 50px 24px 24px;
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 32px 40px;
+    margin-top: 32px;
+
+    &__container {
+      gap: 16px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__logo {
+      font-size: 24px;
+
+      &-icon {
+        padding-right: 12px;
+      }
+    }
+
+    &__info {
+      gap: 24px;
+      font-size: 15px;
+      justify-content: center;
+    }
+
+    &__socials {
+      padding: 40px 20px 20px;
+      gap: 14px;
+      justify-content: center;
+
+      &--header {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    padding: 24px 20px;
+    margin-top: 24px;
+
+    &__container {
+      padding-bottom: 20px;
+      align-items: start;
+    }
+
+    &__logo {
+      font-size: 22px;
+
+      &-icon {
+        padding-right: 10px;
+      }
+    }
+
+    &__info {
+      gap: 32px;
+      font-size: 14px;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__socials {
+      padding: 30px 16px 16px;
+      gap: 12px;
+
+      &--header {
+        font-size: 11px;
+      }
+    }
+  }
+}

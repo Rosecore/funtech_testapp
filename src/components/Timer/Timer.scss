@@ -1,0 +1,29 @@
+.timer {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(20, 20, 22, 0.6);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+
+  @media (max-width: 1024px) {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 375px) {
+    top: 8px;
+    right: 8px;
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 8px;
+  }
+}
