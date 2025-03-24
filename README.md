@@ -1,0 +1,1 @@
+Превью можно посмотреть здесь: https://codesandbox.io/p/github/Rosecore/funtech_testapp/master?workspaceId=ws_ErzDn6SfCDBECCeanLLFzM (Желательно открыть страничку в отдельной вкладке ![image](https://github.com/user-attachments/assets/73936818-24e0-4a1e-b0e8-707c5b5ab834))
